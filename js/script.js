@@ -37,10 +37,26 @@ var classe = [
     },
 ]
 
-// console.log(classe);
+// // console.log(classe);
 
-for (var i = 0; i < classe.length; i++) {
-    console.log(classe[i]["nome"] + " " + classe[i]["cognome"]);
-}
+// for (var i = 0; i < classe.length; i++) {
+//     console.log(classe[i]["nome"] + " " + classe[i]["cognome"]);
+// }
 
 // Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+
+var utente = {};
+
+var nomeUtente = prompt("Inserisci un nome");
+var cognomeUtente = prompt("Inserisci un cognome");
+var etaUtente = parseInt(prompt("Inserisci l'età"));
+
+utente.nome = nomeUtente;
+utente.cognome = cognomeUtente;
+utente.eta = etaUtente;
+
+console.log(utente);
+
+classe.push(utente);
+
+console.log(classe);
